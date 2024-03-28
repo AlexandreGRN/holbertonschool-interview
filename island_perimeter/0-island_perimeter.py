@@ -17,7 +17,7 @@ def checkSurrounding(grid, row, cell):
     return perimeter
 
 """
-Island perimeter
+Island perimeter function that returns the perimeter of the island described in grid
 """
 
 
