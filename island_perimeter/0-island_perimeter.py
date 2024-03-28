@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Check the surrounding cells of a cell
+"""
+
 # Check the surrounding cells of a cell
 def checkSurrounding(grid, row, cell):
     perimeter = 4
