@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""
-Check the surrounding cells of a cell
-"""
-
 # Check the surrounding cells of a cell
 def checkSurrounding(grid, row, cell):
     perimeter = 4
@@ -15,10 +11,6 @@ def checkSurrounding(grid, row, cell):
     if cell != len(grid[row]) - 1 and grid[row][cell + 1] == 1:
         perimeter -= 1
     return perimeter
-
-"""
-Island
-"""
 
 # Island
 def island_perimeter(grid):
