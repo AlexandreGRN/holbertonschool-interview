@@ -2,6 +2,8 @@
 """
 Check if all keys are present
 """
+
+
 def checkKeys(boxes, keyList):
     if len(keyList) == len(boxes):
         return True
@@ -9,6 +11,8 @@ def checkKeys(boxes, keyList):
 """
 Check if all boxes can be opened
 """
+
+
 def canUnlockAll(boxes):
     keyList = [0]
     newKeyList = [0]
