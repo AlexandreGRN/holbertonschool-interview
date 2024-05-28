@@ -36,12 +36,18 @@ int is_palindrome(listint_t **head)
 	{
 		if (pop(&stack) != slow->n)
 		{
-			free(stack);
+			if (stack != NULL)
+			{
+				free(stack);
+			}
 			return (0);
 		}
 		slow = slow->next;
 	}
-	free(stack);
+	if (stack != NULL)
+	{
+		free(stack);
+	}
 	return (1);
 }
 
@@ -70,19 +76,22 @@ void push(listint_t **stack, int n)
  */
 int pop(listint_t **stack)
 {
-listint_t *temp;
-int n;
+	listint_t *temp;
+	int n;
 
-if (*stack == NULL)
-{
-exit(EXIT_FAILURE);
-}
+	if (*stack == NULL)
+	{
+		exit(EXIT_FAILURE);
+	}
 
-temp = *stack;
-n = temp->n;
+	temp = *stack;
+	n = temp->n;
 
-*stack = (*stack)->next;
-free(temp);
+	*stack = (*stack)->next;
+	if (temp != NULL)
+	{
+		free(temp);
+	}
 
-return (n);
+	return (n);
 }
