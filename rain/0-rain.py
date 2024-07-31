@@ -6,6 +6,8 @@ Water retain algo
 
 def rain(walls):
     water_retain = 0
+    if (len(walls) == 0):
+        return 0
     for height in range(max(walls) + 1):
         water_retain_last_puddle = 0
         in_puddle = False
