@@ -4,12 +4,14 @@ A script that reads stdin line by line and computes metrics.
 """
 import sys
 
+
 def print_msg(codes, file_size):
     """Print the metrics to stdout."""
     print("File size: {}".format(file_size))
     for key, val in sorted(codes.items()):
         if val != 0:
             print("{}: {}".format(key, val))
+
 
 def main():
     file_size = 0
@@ -46,6 +48,7 @@ def main():
 
     finally:
         print_msg(codes, file_size)
+
 
 if __name__ == "__main__":
     main()
