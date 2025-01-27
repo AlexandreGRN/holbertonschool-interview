@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
-    script that reads stdin line by line and computes metrics
+script that reads stdin line by line and computes metrics
 """
 import sys
 
 
 def print_msg(codes, file_size):
+    """ print in stdout """
     print("File size: {}".format(file_size))
     for key, val in sorted(codes.items()):
         if val != 0:
