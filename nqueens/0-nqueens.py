@@ -1,6 +1,12 @@
+#!/usr/bin/python3
+"""
+Nqueen algo
+"""
+
 import sys
 
-if len(sys.argv) > 2 or len(sys.argv) < 2:
+
+if len(sys.argv) != 2:
     print("Usage: nqueens N")
     exit(1)
 
