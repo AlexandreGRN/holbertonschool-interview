@@ -2,7 +2,7 @@
 
 
 /**
- * not_in - return 1 if 'q' not in array 'arr'
+ * not_in - return 1 if q is not inside arr
  * @arr: an array of ints
  * @len: the length of arr
  * @q: the value to check for
@@ -22,7 +22,7 @@ int not_in(int *arr, int len, int q)
 
 
 /**
- * str_match - match word as a substring of str
+ * str_match - match a word as a substring of str
  * @str: a string
  * @word: an array of words
  * Return: 1 if word is a substring of str, 0 otherwise
@@ -41,7 +41,7 @@ int str_match(char const *str, char const *word)
 
 
 /**
- * full_match - find if a substring match occurs at a single location
+ * full_match - find if a substring match at a specific location
  * @s: a string
  * @words: an array of words
  * @nb_words: the number of elements in parameter 'words'
@@ -88,7 +88,7 @@ int full_match(char const *s, char const **words, int nb_words, int word_len)
 
 
 /**
- * find_substring - find in 's' substrings made up of the words in 'words'
+ * find_substring - find in substrings in a word
  * @s: a string
  * @words: an array of words
  * @nb_words: the number of elements in parameter 'words'
