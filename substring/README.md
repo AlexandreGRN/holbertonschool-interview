@@ -1,0 +1,1 @@
+Substring funtion in c
